@@ -23,54 +23,213 @@
                 <img src="images/logo_Afri.png" alt="Logo AfriConnect Summit" class="logo" width="100">
            
         </div>
+        <!-- Menu Hamburger pour Mobile -->
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
         <ul  type="none">
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="programme.html">Programme</a></li>
             <li><a href="intervenants.html">Intervenants</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <div>
-            <a href="#">S'inscrire</a>
+          <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Changer le thème">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <a href="contact.html">S'inscrire</a>
         </div>
     </nav>
     
 </header>
-  <main>
+ <main>
+    <!-- HERO AVEC VIDÉO & COMPTE À REBOURS -->
     <section class="herovideo">
         <div class="herovideo_grid">
             
-            <div class="video">
+            <!-- Bloc Gauche  -->
+            <div class="video_wrapper">
                 <video autoplay loop muted playsinline class="main_video">
-                    <source src="" type="video/mp4">
+                    <source src="images/video.mp4" type="video/mp4">
                 </video>
-                
                 <div class="button_video">
-                    <button></button>
-                    <button></button>
+                    <button id="play-pause-btn" aria-label="Play/Pause"><i class="bi bi-pause-fill"></i></button>
+                    <button id="mute-btn" aria-label="Muter"><i class="bi bi-volume-mute-fill"></i></button>
                 </div>
             </div>
 
-            <div class="hero_content">
+            <!-- Bloc Droite -->
+            <div class="hero_card">
                 <div class="hero_badge">
-                    <img src="" alt="Icône AfriConnect" class="hero_badge_img">
+                    <img src="images/afriiiquipe.png" alt="Logo AfriConnect" class="hero_badge_img">
                 </div>
                 
-                <h2 class="hero_title">
-                    <span>AfriConnect Summit 2026</span>
-                </h2>
+                <h1 class="hero_title">
+                    « Le rendez-vous incontournable pour l'avenir technologique de l'Afrique »
+                </h1>
                 
                 <div class="hero_description">
-                    <p>Propulsez vos compétences tech et connectez-vous avec les leaders de l'industrie internationale depuis Dakar.</p>
+                    <p>L'AfriConnect Summit 2026 revient au Centre International de Conférences de Dakar du 15 au 17 octobre 2026. Rejoignez-nous !</p>
+                </div>
+
+                <!-- COMPTE À REBOURS  -->
+                <div class="countdown_container">
+                    <div class="countdown_item">
+                        <span id="days">00</span>
+                        <label>Jours</label>
+                    </div>
+                    <div class="countdown_item">
+                        <span id="hours">00</span>
+                        <label>Heures</label>
+                    </div>
+                    <div class="countdown_item">
+                        <span id="minutes">00</span>
+                        <label>Min</label>
+                    </div>
+                    <div class="countdown_item">
+                        <span id="seconds">00</span>
+                        <label>Sec</label>
+                    </div>
                 </div>
                 
                 <div class="hero_actions">
-                    <a href="#" class="btn_cta btn_community">Rejoignez notre communauté</a>
-                    <a href="#" class="btn_cta btn_expo">Exposition</a>
+                    <a href="contact.html" class="btn_cta btn_primary">Rejoignez notre communauté</a>
+                    <a href="#sponsors" class="btn_cta btn_secondary">Exposition</a>
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- SECTION CHIFFRES CLÉS (Ajoutée car demandée dans tes consignes !) -->
+    <section class="section-stats">
+        <div class="container stats_grid">
+            <div class="stat_item">
+                <div class="stat_number" data-target="1200">+0</div>
+                <div class="stat_label">Participants</div>
+            </div>
+            <div class="stat_item">
+                <div class="stat_number" data-target="48">0</div>
+                <div class="stat_label">Intervenants</div>
+            </div>
+            <div class="stat_item">
+                <div class="stat_number" data-target="3">0</div>
+                <div class="stat_label">Jours de Conférence</div>
+            </div>
+            <div class="stat_item">
+                <div class="stat_number" data-target="12">0</div>
+                <div class="stat_label">Pays Représentés</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION POURQUOI PARTICIPER -->
+    <section class="section-why">
+        <div class="container">
+            <h2 class="section_title">Pourquoi participer ?</h2>
+            <div class="why_flex">
+                <div class="why_item">
+                    <div class="why_icon"><i class="bi bi-diagram-3-fill"></i></div>
+                    <h3>Networking</h3>
+                    <p>Connectez-vous avec les leaders de l'industrie technologique globale et créez des partenariats durables.</p>
+                </div>
+                <div class="why_item">
+                    <div class="why_icon"><i class="bi bi-lightbulb-fill"></i></div>
+                    <h3>Innovation</h3>
+                    <p>Découvrez en exclusivité les dernières avancées en IA, Big Data et infrastructures du continent.</p>
+                </div>
+                <div class="why_item">
+                    <div class="why_icon"><i class="bi bi-mortarboard-fill"></i></div>
+                    <h3>Montée en compétences</h3>
+                    <p>Participez à des workshops interactifs menés par des ingénieurs et experts reconnus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION INTERVENANTS VEDETTES -->
+    <section class="section-speakers">
+        <div class="container">
+            <h2 class="section_title">Intervenants Vedettes</h2>
+            <div class="speakers_grid">
+                <!-- Speaker 1 -->
+                <div class="speaker_card">
+                    <div class="speaker_img_wrapper">
+                        <img src="images/photo.png" alt="El Hadji Diouf" class="speaker_img">
+                    </div>
+                    <h3>El Hadji Diouf</h3>
+                    <p class="speaker_role">Expert IA & Deep Learning</p>
+                    <span class="speaker_country">🇸🇳 Sénégal</span>
+                </div>
+                <!-- Speaker 2 -->
+                <div class="speaker_card">
+                    <div class="speaker_img_wrapper">
+                        <img src="images/GHA.png" alt="Sophia Mensah" class="speaker_img">
+                    </div>
+                    <h3>Sophia Mensah</h3>
+                    <p class="speaker_role">Directrice Data Tech</p>
+                    <span class="speaker_country">🇬🇭 Ghana</span>
+                </div>
+                <!-- Speaker 3 -->
+                <div class="speaker_card">
+                    <div class="speaker_img_wrapper">
+                        <img src="images/MAL.png" alt="Fatoumata Ba" class="speaker_img">
+                    </div>
+                    <h3>Fatoumata Ba</h3>
+                    <p class="speaker_role">CTO FinTech Solutions</p>
+                    <span class="speaker_country">🇲🇱 Mali</span>
+                </div>
+                <!-- Speaker 4 -->
+                <div class="speaker_card">
+                    <div class="speaker_img_wrapper">
+                        <img src="images/michael olise.png" alt="Jean-Luc Perrot" class="speaker_img">
+                    </div>
+                    <h3>Jean-Luc Perrot</h3>
+                    <p class="speaker_role">VP Cloud Infrastructure</p>
+                    <span class="speaker_country">🇨🇮 Côte d'Ivoire</span>
+                </div>
+            </div>
+            <div class="speakers_action">
+                <a href="intervenants.html" class="btn_view">Voir tous les intervenants</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SPONSORS -->
+    <section id="sponsors" class="section-sponsors">
+        <div class="container">
+            <h2 class="section_title">Nos Sponsors</h2>
+            
+            <!-- Niveau Or -->
+            <div class="sponsors_tier tier_gold">
+                <h3>Partenaires Or</h3>
+                <div class="sponsors_logos">
+                    <img src="images/orange.png" alt="orange" class="logo_gold">
+                    <img src="images/wave.png" alt="wave" class="logo_gold">
+                </div>
+            </div>
+
+            <!-- Niveau Argent -->
+            <div class="sponsors_tier tier_silver">
+                <h3>Partenaires Argent</h3>
+                <div class="sponsors_logos">
+                    <img src="images/free.jpg" alt="freeee" class="logo_gold">
+                    <img src="images/ecobank.png" alt="eco afrique" class="logo_gold">
+                    <img src="images/atos.jpg" alt="atos" class="logo_gold">
+                </div>
+            </div>
+
+            <!-- Niveau Bronze -->
+            <div class="sponsors_tier tier_bronze">
+                <h3>Partenaires Bronze</h3>
+                <div class="sponsors_logos">
+                    <img src="images/der.png" alt="der" class="logo_gold">
+                    <img src="images/gainde.png" alt="gaide200" class="logo_gold">
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -92,20 +251,31 @@
         <div class="footer_col">
             <h3>Navigation</h3>
             <ul class="footer_links" type="none">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#programme">Programme</a></li>
-                <li><a href="#intervenants">Intervenants</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 
         <div class="footer_col">
             <h3>Suivez-nous</h3>
             <div class="footer_socials">
-                <a href="#" class="social_link">LinkedIn</a>
-                <a href="#" class="social_link">X (Twitter)</a>
-                <a href="#" class="social_link">TikTok</a>
-                <a href="#" class="social_link">YouTube</a>
+              <a href="#" class="social_link">
+    <i class="bi bi-linkedin"></i> LinkedIn
+</a>
+
+<a href="#" class="social_link">
+    <i class="bi bi-twitter-x"></i> X
+</a>
+
+<a href="#" class="social_link">
+    <i class="bi bi-tiktok"></i> TikTok
+</a>
+
+<a href="#" class="social_link">
+    <i class="bi bi-youtube"></i> YouTube
+</a>
             </div>
         </div>
 

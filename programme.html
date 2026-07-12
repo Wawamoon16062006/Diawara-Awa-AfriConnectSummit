@@ -19,41 +19,60 @@
     <header>
     <nav class="nav-summit">
         <div class="nav-logo">
-            
+           
                 <img src="images/logo_Afri.png" alt="Logo AfriConnect Summit" class="logo" width="100">
-            
+           
         </div>
+        <!-- Menu Hamburger pour Mobile -->
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
         <ul  type="none">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="programme.html">Programme</a></li>
+            <li><a href="programme.html" class="active">Programme</a></li>
             <li><a href="intervenants.html">Intervenants</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <div>
-            <a href="#">S'inscrire</a>
+          <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Changer le thème">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <a href="contact.html">S'inscrire</a>
         </div>
     </nav>
+    <div class="page-banner">
+        <div class="banner-content">
+            <h1>Programme de l'Événement</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Accueil</a> 
+                <span class="separator"><i class="bi bi-chevron-right"></i></span> 
+                <span class="current">Programme</span>
+            </nav>
+        </div>
+    </div>
     
 </header>
 
 <main>
         
         
-            <h1>Programme de l'Événement</h1>
-        
+          
 
-        <section class="section">
-            <div class="">
-                <button >Jour 1</button>
-                <button >Jour 2</button>
-                <button >Jour 3</button>
+        <section class="program-section">
+            <div class="tabs-container">
+                <button class="tab-btn active">Jour 1</button>
+                <button class="tab-btn">Jour 2</button>
+                <button class="tab-btn">Jour 3</button>
             </div>
 
-            <div >
-                <div >
-                    <table>
+            <div class="schedule-container">
+          
+            <div class="tab-content active">
+                <div class="table-responsive">
+                    <table class="schedule-table">
                         <thead>
                             <tr>
                                 <th>Heure</th>
@@ -64,154 +83,78 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>08:30 - 09:30</td>
+                                <td class="time-col">08:30 - 09:30</td>
                                 <td><strong>Accueil & Enregistrement</strong></td>
-                                -
-                                <td>Hall Principal</td>
+                                <td>—</td>
+                                <td><span class="room-badge">Hall Principal</span></td>
                             </tr>
                             <tr>
-                                <td>09:30 - 10:30</td>
+                                <td class="time-col">09:30 - 10:30</td>
                                 <td>Conférence d'ouverture : L'avenir de la Tech en Afrique</td>
                                 <td>Dr. Amadou Diallo</td>
-                                <td>Amphi A</td>
+                                <td><span class="room-badge secondary">Amphi A</span></td>
                             </tr>
                             <tr>
-                                <td>10:45 - 12:00</td>
+                                <td class="time-col">10:45 - 12:00</td>
                                 <td>Keynote : Révolution de la Data Science et IA</td>
                                 <td>Fatou Diop</td>
-                                <td>Amphi A</td>
+                                <td><span class="room-badge secondary">Amphi A</span></td>
                             </tr>
                             <tr>
-                                <td>12:00 - 13:30</td>
+                                <td class="time-col">12:00 - 13:30</td>
                                 <td><strong>Pause Déjeuner & Networking</strong></td>
-                                -
-                                <td>Espace Central</td>
+                                <td>—</td>
+                                <td><span class="room-badge">Espace Central</span></td>
                             </tr>
                             <tr>
-                                <td>13:30 - 15:30</td>
+                                <td class="time-col">13:30 - 15:30</td>
                                 <td>Atelier : Initiation à Python & Data Clean</td>
                                 <td>Moussa Ndiaye</td>
-                                <td>Lab Tech 1</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Heure</th>
-                                <th>Session</th>
-                                <th>Intervenant</th>
-                                <th>Salle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>09:00 - 10:15</td>
-                                <td>Panel : Infrastructure Cloud et Big Data au Sénégal</td>
-                                <td>Sokhna Fall</td>
-                                <td>Amphi B</td>
-                            </tr>
-                            <tr>
-                                <td>10:30 - 12:00</td>
-                                <td>Masterclass : Stratégies de cybersécurité</td>
-                                <td>Omar Ka</td>
-                                <td>Amphi A</td>
-                            </tr>
-                            <tr>
-                                <td>12:00 - 13:30</td>
-                                <td><strong>Pause Déjeuner & Networking</strong></td>
-                                -
-                                <td>Espace Central</td>
-                            </tr>
-                            <tr>
-                                <td>13:30 - 15:00</td>
-                                <td>Atelier : Création d'APIs performantes</td>
-                                <td>Awa Diawara</td>
-                                <td>Lab Tech 2</td>
-                            </tr>
-                            <tr>
-                                <td>15:15 - 17:00</td>
-                                <td>Pitch : Projets innovants L2</td>
-                                <td>Étudiants ISI</td>
-                                <td>Amphi B</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Heure</th>
-                                <th>Session</th>
-                                <th>Intervenant</th>
-                                <th>Salle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>09:30 - 11:00</td>
-                                <td>Conférence : Web3 et opportunités décentralisées</td>
-                                <td>Ibrahima Kane</td>
-                                <td>Amphi A</td>
-                            </tr>
-                            <tr>
-                                <td>11:15 - 12:30</td>
-                                <td>Table ronde : FinTech et inclusion financière</td>
-                                <td>Mariama Ba</td>
-                                <td>Amphi A</td>
-                            </tr>
-                            <tr>
-                                <td>12:30 - 14:00</td>
-                                <td><strong>Pause Déjeuner & Clôture Expo</strong></td>
-                                -
-                                <td>Espace Central</td>
-                            </tr>
-                            <tr>
-                                <td>14:00 - 16:00</td>
-                                <td>Hackathon Express : Finale & Remise des prix</td>
-                                <td>Jury AfriConnect</td>
-                                <td>Hall Principal</td>
-                            </tr>
-                            <tr>
-                                <td>16:00 - 17:00</td>
-                                <td><strong>Cérémonie de Clôture</strong></td>
-                                -
-                                <td>Amphi A</td>
+                                <td><span class="room-badge accent">Lab Tech 1</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <h2>Thématiques Principales</h2>
-            <div>
-                <div>
-                    <h3>Intelligence Artificielle</h3>
-                    <p>Modèles LLM et automatisation.</p>
-                </div>
-                <div >
-                    <h3>Big Data & Analytics</h3>
-                    <p>Traitement et modélisation des données massives.</p>
-                </div>
-                <div>
-                    <h3>Web Innovant & Cloud</h3>
-                    <p>Architectures résilientes et Cloud.</p>
-                </div>
-                <div>
-                    <h3>Cybersécurité</h3>
-                    <p>Protection des systèmes et données sensibles.</p>
-                </div>
+            <div class="tab-content">
+               
             </div>
-        </section>
 
-    </main>
+            <div class="tab-content">
+              
+            </div>
+        </div>
+    </section>
+
+        <!-- SECTION THÉMATIQUES -->
+         
+    <section class="themes-section">
+        <h2 class="section-title-center">Thématiques Principales</h2>
+        <div class="themes-grid">
+            <div class="theme-card">
+                <div class="theme-icon"><i class="bi bi-cpu"></i></div>
+                <h3>Intelligence Artificielle</h3>
+                <p>Modèles LLM et automatisation.</p>
+            </div>
+            <div class="theme-card">
+                <div class="theme-icon"><i class="bi bi-database-gear"></i></div>
+                <h3>Big Data & Analytics</h3>
+                <p>Traitement et modélisation des données massives.</p>
+            </div>
+            <div class="theme-card">
+                <div class="theme-icon"><i class="bi bi-cloud-check"></i></div>
+                <h3>Web Innovant & Cloud</h3>
+                <p>Architectures résilientes et Cloud.</p>
+            </div>
+            <div class="theme-card">
+                <div class="theme-icon"><i class="bi bi-shield-lock"></i></div>
+                <h3>Cybersécurité</h3>
+                <p>Protection des systèmes et données sensibles.</p>
+            </div>
+        </div>
+    </section>
+</main>
     
 
 
@@ -237,10 +180,18 @@
         <div class="footer_col">
             <h3>Suivez-nous</h3>
             <div class="footer_socials">
-                <a href="#" class="social_link">LinkedIn</a>
-                <a href="#" class="social_link">X (Twitter)</a>
-                <a href="#" class="social_link">TikTok</a>
-                <a href="#" class="social_link">YouTube</a>
+                <a href="#" class="social_link">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="#" class="social_link">
+                    <i class="bi bi-twitter-x"></i> X
+                </a>
+                <a href="#" class="social_link">
+                    <i class="bi bi-tiktok"></i> TikTok
+                </a>
+                <a href="#" class="social_link">
+                    <i class="bi bi-youtube"></i> YouTube
+                </a>
             </div>
         </div>
 

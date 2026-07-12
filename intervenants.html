@@ -20,116 +20,167 @@
         <div class="nav-logo">
            
                 <img src="images/logo_Afri.png" alt="Logo AfriConnect Summit" class="logo" width="100">
-            
+           
         </div>
+        <!-- Menu Hamburger pour Mobile -->
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
         <ul  type="none">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="programme.html">Programme</a></li>
-            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="intervenants.html" class="active">Intervenants</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <div>
-            <a href="#">S'inscrire</a>
+          <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Changer le thème">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <a href="contact.html">S'inscrire</a>
         </div>
     </nav>
+    <div class="page-banner">
+        <div class="banner-content">
+            <h1>Intervenants</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Accueil</a> 
+                <span class="separator"><i class="bi bi-chevron-right"></i></span> 
+                <span class="current">Intervenants</span>
+            </nav>
+        </div>
+    </div>
     
 </header>
 
 <main>
         
         
-            <h1>Nos Intervenants</h1>
+          
         
 
         <!-- BOUTONS DE FILTRAGE DYNAMIQUE  -->
 
-        <section>
-            <div >
-                <button>Tous</button>
-                <button>IA & Tech</button>
-                <button>Business</button>
-                <button>Design</button>
-                <button>Data</button>
+        <section class="filter-section">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn " data-filter="tech">IA & Tech</button>
+                <button class="filter-btn "data-filter="busines">Business</button>
+                <button class="filter-btn " data-filter="design">Design</button>
+                <button class="filter-btn " data-filter="data">Data</button>
             </div>
         </section>
 
         <!-- GRILLE D'INTERVENANTS -->
-        <section>
-            <div>
+        <section class="speakers-section">
+            <div class="speakers-grid">
                 
-                <!-- Intervenant 1 -->
-                <div>
-                    <img src="" alt="" class="">
-                    <h3>Dr. Amadou Diallo</h3>
-                    <p>Expert en Intelligence Artificielle</p>
-                    <p>SN Sénégal</p>
+              <!-- Intervenant 1 -->
+            <div class="speaker-card" data-category="tech">
+                <div class="speaker-img-wrapper">
+                    <img src="images/Dr Amadou Diallo.png" alt="Dr. Amadou Diallo">
                 </div>
+                <div class="speaker-info">
+                    <h3>Dr. Amadou Diallo</h3>
+                    <p class="specialty">Expert en Intelligence Artificielle</p>
+                    <p class="country">🇸🇳 Sénégal</p>
+                </div>
+            </div>
 
                 <!-- Intervenant 2 -->
-                <div>
-                    <img src="" alt="" class="">
-                    <h3>Fatou Diop</h3>
-                    <p>Data Scientist Senior</p>
-                    <p>ML Mali</p>
+                <div class="speaker-card" data-category="data">
+                <div class="speaker-img-wrapper">
+                    <img src="images/Fatou Diawara.png" alt="Fatou Diawara">
                 </div>
-
+                <div class="speaker-info">
+                    <h3>Fatou Diawara</h3>
+                    <p class="specialty">Data Scientist Senior</p>
+                    <p class="country">🇲🇱 Mali</p>
+                </div>
+            </div>
                 <!-- Intervenant 3 -->
-                <div>
-                    <img src="" alt="" class="">
-                    <h3>John Michael Seri</h3>
-                    <p>Fondateur & CEO FinTech</p>
-                    <p>CI Côte d'Ivoire</p>
+                <div class="speaker-card" data-category="business">
+                <div class="speaker-img-wrapper">
+                    <img src="images/jean michael seri.png" alt="John Michael Seri">
                 </div>
+                <div class="speaker-info">
+                    <h3>John Michael Seri</h3>
+                    <p class="specialty">Fondateur & CEO FinTech</p>
+                    <p class="country">🇨🇮 Côte d'Ivoire</p>
+                </div>
+            </div>
 
                 <!-- Intervenant 4 -->
-                <div>
-                    <img src="" alt="" class="">
-                    <h3>Lionel Fidèle Soglo</h3>
-                    <p>Product Designer UX/UI</p>
-                    <p>BN Bénin</p>
+                <div class="speaker-card" data-category="design">
+                <div class="speaker-img-wrapper">
+                    <img src="images/lionel.png" alt="Lionel Fidèle Soglo">
                 </div>
+                <div class="speaker-info">
+                    <h3>Lionel Fidèle Soglo</h3>
+                    <p class="specialty">Product Designer UX/UI</p>
+                    <p class="country">🇧🇯 Bénin</p>
+                </div>
+            </div>
 
                 <!-- Intervenant 5 -->
-                <div>
-                    <img src="" alt="" class="">
+               <div class="speaker-card" data-category="tech">
+                <div class="speaker-img-wrapper">
+                    <img src="images/grace.png" alt="Grâce Miracle Obiang">
+                </div>
+                <div class="speaker-info">
                     <h3>Grâce Miracle Obiang</h3>
-                    <p>Architecte Cloud & Tech Lead</p>
-                    <p>GB Gabon</p>
+                    <p class="specialty">Architecte Cloud & Tech Lead</p>
+                    <p class="country">🇬🇦 Gabon</p>
                 </div>
-
+            </div>
                 <!-- Intervenant 6 -->
-                <div>
-                    <img src="" alt="" class="">
+               <div class="speaker-card" data-category="data">
+                <div class="speaker-img-wrapper">
+                    <img src="images/Kibsa.png" alt="Kibsa Zongo">
+                </div>
+                <div class="speaker-info">
                     <h3>Kibsa Zongo</h3>
-                    <p>Analyste Big Data</p>
-                    <p>BF Burkina Faso</p>
+                    <p class="specialty">Analyste Big Data</p>
+                    <p class="country">🇧🇫 Burkina Faso</p>
                 </div>
-
+            </div>
                 <!-- Intervenant 7 -->
-                <div>
-                    <img src="" alt="" class="">
-                    <h3>Fiston Bienvenu Kabongo</h3>
-                    <p>Consultant en Transformation Digitale</p>
-                    <p>CG Congo</p>
+             <div class="speaker-card" data-category="business">
+                <div class="speaker-img-wrapper">
+                    <img src="images/bienvenu.png" alt="Fiston Bienvenu">
                 </div>
+                <div class="speaker-info">
+                    <h3>Fiston Bienvenu J. Kabongo</h3>
+                    <p class="specialty">Consultant en Transformation Digitale</p>
+                    <p class="country">🇨🇬 Congo</p>
+                </div>
+            </div>
 
                 <!-- Intervenant 8 -->
-                <div>
-                    <img src="" alt="" class="">
-                    <h3>Abraham Couscous</h3>
-                    <p>Directeur Artistique Web</p>
-                    <p>MA Maroc</p>
+               <div class="speaker-card" data-category="design">
+                <div class="speaker-img-wrapper">
+                    <img src="images/abraham.png" alt="Abraham Couscous">
                 </div>
+                <div class="speaker-info">
+                    <h3>Abraham Couscous</h3>
+                    <p class="specialty">Directeur Artistique Web</p>
+                    <p class="country">🇲🇦 Maroc</p>
+                </div>
+            </div>
 
                 <!-- Intervenant 9 -->
-                <div>
-                    <img src="" alt="" class="">
-                    <h3>Kwame Mensah</h3>
-                    <p>Chercheur en Machine Learning</p>
-                    <p>GH Ghana</p>
+               <div class="speaker-card" data-category="tech">
+                <div class="speaker-img-wrapper">
+                    <img src="images/mensah.png" alt="Kwame Mensah">
                 </div>
+                <div class="speaker-info">
+                    <h3>Kwame Mensah</h3>
+                    <p class="specialty">Chercheur en Machine Learning</p>
+                    <p class="country">🇬🇭 Ghana</p>
+                </div>
+            </div>
 
             </div>
         </section>
@@ -154,20 +205,31 @@
         <div class="footer_col">
             <h3>Navigation</h3>
             <ul class="footer_links" type="none">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#programme">Programme</a></li>
-                <li><a href="#intervenants">Intervenants</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 
         <div class="footer_col">
             <h3>Suivez-nous</h3>
             <div class="footer_socials">
-                <a href="#" class="social_link">LinkedIn</a>
-                <a href="#" class="social_link">X (Twitter)</a>
-                <a href="#" class="social_link">TikTok</a>
-                <a href="#" class="social_link">YouTube</a>
+              <a href="#" class="social_link">
+    <i class="bi bi-linkedin"></i> LinkedIn
+</a>
+
+<a href="#" class="social_link">
+    <i class="bi bi-twitter-x"></i> X
+</a>
+
+<a href="#" class="social_link">
+    <i class="bi bi-tiktok"></i> TikTok
+</a>
+
+<a href="#" class="social_link">
+    <i class="bi bi-youtube"></i> YouTube
+</a>
             </div>
         </div>
 
