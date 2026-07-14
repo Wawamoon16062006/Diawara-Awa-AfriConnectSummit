@@ -59,74 +59,156 @@
 <main>
         
         
-          
+          <section class="program-section">
 
-        <section class="program-section">
-            <div class="tabs-container">
-                <button class="tab-btn active">Jour 1</button>
-                <button class="tab-btn">Jour 2</button>
-                <button class="tab-btn">Jour 3</button>
-            </div>
+    <!-- Onglets -->
+    <div class="tabs-container">
+        <button class="tab-btn active" data-tab="jour1">Jour 1</button>
+        <button class="tab-btn" data-tab="jour2">Jour 2</button>
+        <button class="tab-btn" data-tab="jour3">Jour 3</button>
+    </div>
 
-            <div class="schedule-container">
-          
-            <div class="tab-content active">
-                <div class="table-responsive">
-                    <table class="schedule-table">
-                        <thead>
-                            <tr>
-                                <th>Heure</th>
-                                <th>Session</th>
-                                <th>Intervenant</th>
-                                <th>Salle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="time-col">08:30 - 09:30</td>
-                                <td><strong>Accueil & Enregistrement</strong></td>
-                                <td>—</td>
-                                <td><span class="room-badge">Hall Principal</span></td>
-                            </tr>
-                            <tr>
-                                <td class="time-col">09:30 - 10:30</td>
-                                <td>Conférence d'ouverture : L'avenir de la Tech en Afrique</td>
-                                <td>Dr. Amadou Diallo</td>
-                                <td><span class="room-badge secondary">Amphi A</span></td>
-                            </tr>
-                            <tr>
-                                <td class="time-col">10:45 - 12:00</td>
-                                <td>Keynote : Révolution de la Data Science et IA</td>
-                                <td>Fatou Diop</td>
-                                <td><span class="room-badge secondary">Amphi A</span></td>
-                            </tr>
-                            <tr>
-                                <td class="time-col">12:00 - 13:30</td>
-                                <td><strong>Pause Déjeuner & Networking</strong></td>
-                                <td>—</td>
-                                <td><span class="room-badge">Espace Central</span></td>
-                            </tr>
-                            <tr>
-                                <td class="time-col">13:30 - 15:30</td>
-                                <td>Atelier : Initiation à Python & Data Clean</td>
-                                <td>Moussa Ndiaye</td>
-                                <td><span class="room-badge accent">Lab Tech 1</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <div class="schedule-container">
 
-            <div class="tab-content">
-               
-            </div>
+        <!-- JOUR 1 -->
+        <div id="jour1" class="tab-content active">
+            <div class="table-responsive">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
 
-            <div class="tab-content">
-              
+                    <tbody>
+                        <tr>
+                            <td class="time-col">08:30 - 09:30</td>
+                            <td><strong>Accueil & Enregistrement</strong></td>
+                            <td>—</td>
+                            <td><span class="room-badge">Hall Principal</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">09:30 - 10:30</td>
+                            <td>Conférence d'ouverture : L'avenir de la Tech en Afrique</td>
+                            <td>Dr. Amadou Diallo</td>
+                            <td><span class="room-badge secondary">Amphi A</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">10:45 - 12:00</td>
+                            <td>Keynote : Révolution de la Data Science et IA</td>
+                            <td>Fatou Diop</td>
+                            <td><span class="room-badge secondary">Amphi A</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">12:00 - 13:30</td>
+                            <td><strong>Pause Déjeuner & Networking</strong></td>
+                            <td>—</td>
+                            <td><span class="room-badge">Espace Central</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">13:30 - 15:30</td>
+                            <td>Atelier : Initiation à Python & Data Clean</td>
+                            <td>Moussa Ndiaye</td>
+                            <td><span class="room-badge accent">Lab Tech 1</span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
             </div>
         </div>
-    </section>
 
+        <!-- JOUR 2 -->
+        <div id="jour2" class="tab-content">
+            <div class="table-responsive">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="time-col">09:00 - 10:00</td>
+                            <td>Cybersécurité en Afrique</td>
+                            <td>Awa Traoré</td>
+                            <td><span class="room-badge secondary">Amphi B</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">10:15 - 12:00</td>
+                            <td>Atelier Cloud Computing</td>
+                            <td>Jean Koffi</td>
+                            <td><span class="room-badge accent">Lab Cloud</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">13:30 - 15:30</td>
+                            <td>Développement Web Moderne</td>
+                            <td>Sarah Ndiaye</td>
+                            <td><span class="room-badge">Salle 2</span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <!-- JOUR 3 -->
+        <div id="jour3" class="tab-content">
+            <div class="table-responsive">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="time-col">09:00 - 10:30</td>
+                            <td>Entrepreneuriat Numérique</td>
+                            <td>Issa Camara</td>
+                            <td><span class="room-badge">Amphi A</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">10:45 - 12:00</td>
+                            <td>IA Générative et Innovation</td>
+                            <td>Fatou Diop</td>
+                            <td><span class="room-badge secondary">Salle IA</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">14:00 - 16:00</td>
+                            <td>Cérémonie de clôture</td>
+                            <td>Organisation</td>
+                            <td><span class="room-badge accent">Hall Principal</span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+        
         <!-- SECTION THÉMATIQUES -->
          
     <section class="themes-section">
