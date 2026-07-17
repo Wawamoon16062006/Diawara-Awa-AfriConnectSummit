@@ -1549,3 +1549,49 @@ body{
 .speaker-card.hidden{
     display:none;
 }
+/* Bouton Retour en haut */
+#backToTop{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--dark);
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+
+    z-index: 1000;
+}
+
+#backToTop.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover{
+    transform: translateY(-5px);
+    background: var(--primary-glow);
+}
+[data-theme="light"]{
+
+    --secondary:#f5f5f5;
+    --dark:#ffffff;
+    --cosecours:#e9edf5;
+    --bgcol:#ffffff;
+
+    --light:#111111;
+    --text-muted:#555555;
+
+}
