@@ -479,37 +479,6 @@ counters.forEach(counter => {
     observerCounter.observe(counter);
 
 });
-// Lecture / Pause
-playPauseBtn.addEventListener("click", function () {
 
-    if (video.paused) {
-        video.play();
-        playPauseBtn.innerHTML = '<i class="bi bi-pause-fill"></i>';
-        playPauseBtn.setAttribute("aria-label", "Mettre la vidéo en pause");
-        playPauseBtn.setAttribute("title", "Pause");
-    } else {
-        video.pause();
-        playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
-        playPauseBtn.setAttribute("aria-label", "Lire la vidéo");
-        playPauseBtn.setAttribute("title", "Lecture");
-    }
 
-});
-
-// Son / Muet
-muteBtn.addEventListener("click", function () {
-
-    video.muted = !video.muted;
-
-    if (video.muted) {
-        muteBtn.innerHTML = '<i class="bi bi-volume-mute-fill"></i>';
-        muteBtn.setAttribute("aria-label", "Activer le son");
-        muteBtn.setAttribute("title", "Activer le son");
-    } else {
-        muteBtn.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
-        muteBtn.setAttribute("aria-label", "Couper le son");
-        muteBtn.setAttribute("title", "Couper le son");
-    }
-
-});
 });
